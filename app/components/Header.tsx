@@ -5,7 +5,7 @@ import {twMerge} from "tailwind-merge";
 import {RxCaretLeft, RxCaretRight} from "react-icons/rx";
 import {HiHome} from "react-icons/hi";
 import {BiSearch} from "react-icons/bi";
-import Button from "@/app/components/Button";
+import Button from "./Button";
 
 interface HeaderProps {
     children: React.ReactNode;
@@ -107,7 +107,15 @@ const Header: React.FC<HeaderProps> = ({
               >
                   <>
                     <div>
-                        <Button/>
+                        <Button
+                            className="
+                                bg-transparent
+                                text-neutral-300
+                                font-medium
+                            "
+                        >
+                            Sign up
+                        </Button>
                     </div>
                   </>
               </div>
