@@ -3,6 +3,7 @@
 import {Song} from "@/types";
 import useLoadImage from "@/hooks/useLoadImage";
 import Image from "next/image";
+import PlayButton from "@/app/components/PlayButton";
 
 interface SongItemProps {
     data: Song;
@@ -50,7 +51,7 @@ const SongItem: React.FC<SongItemProps> = ({
                 alt="Image"
             />
         </div>
-        <div className="flex flex-col items-start w-full p-4 gap-y-1">
+        <div className="flex flex-col items-start w-full pt-4 gap-y-1">
             <p className="font-semibold truncate w-full">
                 {data.title}
             </p>
@@ -60,8 +61,16 @@ const SongItem: React.FC<SongItemProps> = ({
                 By {data.author}
             </p>
         </div>
+        <div className="
+            absolute
+            bottom-24
+            right-5
+        ">
+            <PlayButton />
+        </div>
     </div>
   );
 }
+
 
 export default SongItem;
