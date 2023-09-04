@@ -4,11 +4,11 @@ import SearchInput from "@/app/components/SearchInput";
 import SearchContent from "@/app/search/components/SearchContent";
 
 
-export const revalidate = 0;
-
 interface SearchProps {
     searchParams: { title: string }
-};
+}
+
+export const revalidate = 0;
 
 const Search = async ({ searchParams }: SearchProps) => {
     const songs = await getSongsByTitle(searchParams.title);
