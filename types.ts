@@ -23,7 +23,9 @@ export interface Product {
     id: string;
     active?: boolean;
     name?: string;
-    description?: Stripe.Metadata;
+    description?: string;
+    image?: string;
+    metadata?: Stripe.Metadata;
 }
 
 export interface Price {
