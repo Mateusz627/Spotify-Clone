@@ -1,6 +1,5 @@
 "use client";
 
-
 import { useEffect, useState } from "react";
 import { BsPauseFill, BsPlayFill } from "react-icons/bs";
 import { HiSpeakerWave, HiSpeakerXMark } from "react-icons/hi2";
@@ -21,9 +20,9 @@ interface PlayerContentProps {
 }
 
 const PlayerContent: React.FC<PlayerContentProps> = ({
-                                                         song,
-                                                         songUrl
-                                                     }) => {
+    song,
+    songUrl
+}) => {
     const player = usePlayer();
     const [volume, setVolume] = useState(1);
     const [isPlaying, setIsPlaying] = useState(false);
