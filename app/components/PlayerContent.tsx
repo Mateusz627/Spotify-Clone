@@ -11,6 +11,7 @@ import usePlayer from "@/hooks/usePlayer";
 import LikeButton from "./LikeButton";
 import MediaItem from "./MediaItem";
 import Slider from "./Slider";
+// @ts-ignore
 import useSound from "use-sound";
 
 
