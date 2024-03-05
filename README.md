@@ -3,8 +3,8 @@ Spotify clone using Next 13, React, Tailwind, Stripe, Supabase, PostgreSQL
 DEMO - https://spotify-clone-ten-sepia.vercel.app/
 
 To login use:
-test@demo.com
-Demo123
+Login: test@demo.com
+Password: Demo123
 
 
 To fire up the project locally, use the 
